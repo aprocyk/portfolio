@@ -1,0 +1,43 @@
+.abtContainer{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #8D8D92;
+
+    display: grid;
+    grid-template-columns: 10% 50% 30% 10%;
+    grid-template-rows: 15% auto;
+    grid-template-areas: ". abtTitle . ."
+    ". abtText abtImage .";
+    border-radius: 0 0 60px 60px;
+}
+
+.abtText{
+    font-size: 1.5em;
+    grid-area: abtText;
+    padding: 20px;
+    height: auto;
+    text-align: justify;
+}
+
+.abtImage{
+    grid-area: abtImage;
+
+    height: 500px;
+    width: 500px;
+
+    margin: 20px;
+
+    background-image: url('../img/me.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+
+}
+
+.abtTitle{
+    font-size: 3.5em;
+    grid-area: abtTitle;
+    align-self: center;
+    
+}

@@ -1,0 +1,57 @@
+@use 'projectslider';
+
+.cont{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.fakeCont{
+    position: relative;
+    z-index: -2;
+    top: -120px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    background-color: #B1B1B4;
+}
+.projectCont{
+    
+    margin-top: -120px;
+    // margin: 0;
+    // padding-top: 100px;
+    padding-bottom: 20px;
+
+    
+    background-color: #B1B1B4;
+    height: 700px;
+
+    border-radius: 0 0 60px 60px;
+
+    display:grid;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: 15% 50% auto;
+    grid-template-areas: ". protitle . ."
+    ". slider gitlink ."
+    ". protxt . .";
+}
+
+.sliderCont{
+    
+    grid-area: slider;
+}
+
+.projectTitle{
+    grid-area: protitle;
+}
+
+.projectText{
+    grid-area: protxt;
+}
+
+.gitLink{
+    grid-area: gitlink;
+}

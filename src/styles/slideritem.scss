@@ -1,0 +1,44 @@
+.itemContainer{
+    position: relative;
+    z-index: 4;
+    margin: 0 20px;
+    padding: 0;
+
+    height: 150px;
+    width: 200px;
+
+    border: solid #D7D6D6 2px;
+    border-radius: 20%;
+
+    
+}
+
+.itemButton{
+    display:inline-block;
+    height: auto;
+    width: auto;
+    margin:30% 40%;
+    padding: 5px;
+
+    border: solid black 1px;
+    border-radius: 20%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    cursor: pointer;
+    
+}
+
+.itemContainer:hover > .itemButton{
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+
+.itemAnimation{
+    animation: move 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes move{
+    from{left: 0px;}
+    to{left: 225px;}
+}

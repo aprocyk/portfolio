@@ -1,0 +1,22 @@
+@use 'navbutton';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+.navBar {
+    background-color: #36413E;
+    margin: 0;
+    padding: 0 150px;
+    height: 75px;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}

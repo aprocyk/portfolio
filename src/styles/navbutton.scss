@@ -1,0 +1,42 @@
+.buttonCont {
+
+    
+    height: 100%;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #D7D6D6;
+    font-weight: bold;
+
+}
+
+
+
+
+.buttonText{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
+}
+
+.buttonCont :hover{
+    background-color: #5d5e604d;
+    
+    border-bottom: solid #5D5E60 3px;
+
+    transition: background-color 0.3s ease-in;
+}

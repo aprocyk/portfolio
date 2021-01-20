@@ -1,0 +1,32 @@
+@use 'slideritem';
+
+.contentSlider{
+   
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+.next{
+    // position: relative;
+    // z-index: 5;
+    // height: 150px;
+    // width: 200px;
+    background-color: #B1B1B4;
+    cursor: pointer;
+}
+.prev{
+    // position: relative;
+    // z-index: 5;
+    // height: 150px;
+    // width: 200px;
+    background-color: #B1B1B4;
+    cursor: pointer;
+}

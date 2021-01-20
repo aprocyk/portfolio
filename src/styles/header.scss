@@ -1,0 +1,41 @@
+.headerContainer{
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    color: #D7D6D6;
+
+    
+
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-rows: 33,3% 33,3% auto;
+    grid-template-areas: 
+    "text1 ."
+    ". text2"
+    "text3 .";
+}
+
+.headerText1, .headerText2, .headerText3 {
+width: fit-content;
+height: auto;
+}
+
+
+.headerText1{
+    font-size: 5em;
+    grid-area: text1;
+    justify-self: center;
+    align-self: center;
+}
+.headerText2{
+    font-size: 2em;
+    float: right;
+    grid-area: text2;
+    align-self: center;
+}
+.headerText3{
+    font-size: 3em;
+    bottom: 0;
+    grid-area: text3;
+    justify-self: center;
+}

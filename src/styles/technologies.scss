@@ -1,0 +1,38 @@
+
+
+.techContainer{
+    position: relative;
+    z-index: -1;
+    top: -60px;
+    
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    
+    background-color: #A5A5A9;
+    height: auto;
+
+    display:grid;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: 15% auto;
+    grid-template-areas: ". techTitle . ."
+    ". techGraph techText .";
+
+    border-radius: 0 0 60px 60px;
+
+}
+
+.techGraph{
+    grid-area: techGraph;
+}
+
+.techText{
+    grid-area: techText;
+    text-align: justify;
+}
+
+.techTitle{
+    grid-area: techTitle;
+    align-self: center;
+}
